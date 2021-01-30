@@ -5,7 +5,7 @@ def native_relu(x):
     x = x.copy()               #todo 避免覆盖输入的张量
     for i in range(x.shape[0]):
         for j in range(x.shape[1]):
-            x[i, j] = max(x[i, j], 0) #todo 输出x[i,j]与0两者之间的最大值送给x[i,j]，用for循环遍历整个矩阵，并且输出
+            x[i, j] = max(x[i, j], 0)
     return x
 #todo 注意矩阵如何定义，以及他和列表的区别，最外层是圆括号，外层是中括号是列表list
 num1 = np.array([[1,2,3,4],
