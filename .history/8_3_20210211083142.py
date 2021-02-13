@@ -1,7 +1,7 @@
 '''
 Author: 零到正无穷
 Date: 2021-02-09 20:46:13
-LastEditTime: 2021-02-11 08:45:57
+LastEditTime: 2021-02-11 08:31:42
 LastEditors: Please set LastEditors
 Description: In User Settings Edit
 FilePath: \python\8_3.py
@@ -43,36 +43,3 @@ information = get_person_information(first_name = 'wang', last_name = 'tao', age
 print(information)
 
 #todo 结合使用函数和while循环
-"""
-def get_formatted_namem(first_name, last_name):
-    full_name = f"{first_name} {last_name}"
-    return full_name.title()
-
-while True:
-    print("\nPlease tell me your name: ")
-    f_name = input("First name: ")
-    l_name = input("Last name: ")
-
-    formatted_name = get_formatted_namem(f_name, l_name)
-    print(f"\nHello, {formatted_name}!")
-"""
-#todo 结合使用函数和while循环的另一版本，由于上面的代码是无限循环，所以应有结束机制
-
-def get_formatted_namee(first_name, last_name):
-    full_name = f"{first_name} {last_name}"
-    return full_name.title()
-
-while True:
-    print("\nPlease tell me your name: ")
-    print("(enter 'q' at any time to quit)")
-
-    f_name = input("First naem: ")
-    if f_name == 'q':
-        break
-
-    l_name = input("Last name: ")
-    if l_name == 'q':
-        break
-
-    formatted_name = get_formatted_namee(f_name, l_name)
-    print(f"\nHello, {formatted_name}!")
